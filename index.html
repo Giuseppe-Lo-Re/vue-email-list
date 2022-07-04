@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Axios -->
-    <script>"https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
 
     <!-- Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
@@ -18,8 +18,9 @@
     
     <!-- Vue.js -->
     <div id="root">
-      
-      <ul>
+
+      <!-- Stampa solo se la lunghezza dell'array emailList = 10 -->
+      <ul v-if="emailList.length === 10">
 
         <!-- Ciclo for per stampare tutte le mail in emailist -->
         <li v-for="email in emailList">

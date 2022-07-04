@@ -1,4 +1,3 @@
-// Descrizione:
 // Attraverso l'apposita API di Boolean
 // https://flynn.boolean.careers/exercises/api/random/mail
 // generare 10 indirizzi email e stamparli in pagina all'interno di una lista.
@@ -16,13 +15,12 @@ var app = new Vue(
     // Prende una mail random dall'API
     getRandomMailFromApi() {
 
-      // ciclo for descrescente per 10 volte:
+      // ciclo for per 10 volte:
       for(let i = 0; i < 10; i++) {
 
         // Chiamata API:
         axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
         .then((response) => {
-          console.log(response)
 
           // Salva la mail random in una variabile:
           this.randomMail = response.data.response;
