@@ -13,7 +13,7 @@ var app = new Vue(
   },
   methods : {
     
-    // Scarica una mail random dall'API
+    // Scarica 10 mail random dall'API
     getRandomMailFromApi() {
 
       // ciclo for per 10 volte:
@@ -33,7 +33,7 @@ var app = new Vue(
   // Lancia al caricamento della pagina:
   mounted() {
 
-    // richiama la funzione che scarica una mail random dall'API:
+    // richiama la funzione che scarica 10 mail random dall'API:
     this.getRandomMailFromApi();
   }
 }
